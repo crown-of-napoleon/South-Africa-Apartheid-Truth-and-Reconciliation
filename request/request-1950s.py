@@ -1,8 +1,8 @@
 import requests
 
 # Set the search term and the number of images to download
-search_term = 'apartheid south africa'
-num_images = 10
+search_term = 'apartheid south africa 1950s'
+num_images = 1000
 
 # Set the API key and the endpoint URL
 api_key = 'YOUR_API_KEY'
