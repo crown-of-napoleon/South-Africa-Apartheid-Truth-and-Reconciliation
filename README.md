@@ -38,7 +38,7 @@ If the request is successful (i.e., if the HTTP status code is 200), the code pr
 
 # Disclaimer
 
-The results and opinions generated and concluded by the code are solely for illustrative purposes and do not reflect the opinions and beliefs of the members of the contributors team or their affiliates. The contributors do not endorse any form of racial discrimination, segregation, or speeches that violate equity and human rights. The contributors hold firm beliefs that it is crucial to build a tolerant, diverse environment for everyone, regardless of race, gender, sexuality, etc. 
+The results and opinions generated and concluded by the code are solely for illustrative purposes and do not reflect the opinions and beliefs of the members of the contributors team or their affiliates. The contributors do not endorse any form of racial discrimination, segregation, or speeches that violate principles of equity and human rights. The contributors hold firm belief that it is crucial to build a tolerant, diverse environment for everyone, regardless of race, gender, sexuality, etc. 
 
 # Contributor Covenant Code of Conduct
 
