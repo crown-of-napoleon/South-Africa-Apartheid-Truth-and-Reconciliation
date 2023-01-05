@@ -1,0 +1,8 @@
+# ignore h5 model, they might be too large for git.
+.h5
+
+# ignore API key
+unsplash_key.txt
+
+# ignore training sets
+/images

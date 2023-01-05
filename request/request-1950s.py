@@ -5,11 +5,14 @@ search_term = 'apartheid south africa 1950s'
 num_images = 1000
 
 # Set the API key and the endpoint URL
-api_key = 'YOUR_API_KEY'
+# Read api key based on unsplash_key.txt 
+# the format for the api key is changed to {[userName] [api_key]}
+key_file = open("unsplash_key.txt", "r")
+api_key = key_file.read()
 endpoint_url = 'https://api.unsplash.com/search/photos'
 
 # Make the request
-response = requests.get(endpoint_url, params={'query': search_term, 'per_page': num_images}, headers={'Authorization': 'Bearer ' + api_key})
+response = requests.get(endpoint_url, params={'query': search_term, 'per_page': num_images}, headers={'Authorization': 'Client-ID '+api_key})
 
 # Check the status code of the response
 if response.status_code == 200:
