@@ -1,8 +1,8 @@
-#Historical Background
+# Historical Background
 
 Apartheid was a system of institutionalized racial segregation and discrimination that was enforced in South Africa from 1948 until the early 1990s. It was a political and social policy that was designed to maintain white supremacy and keep the black majority population in a state of subjugation. Under apartheid, the rights and freedoms of black South Africans were severely curtailed, and they were forcibly separated from white South Africans in many areas of life, including where they could live, go to school, and even use public facilities. The system of apartheid was enforced through legislation, and it was upheld by the government, the police, and the military. The regime of apartheid was eventually dismantled in the 1990s, following a long and often violent struggle by black South Africans for their rights and freedoms.
 
-#Introduction
+# Introduction
 
 This project serves to use Machine Learning technologies (Convulutional Neural Networks, etc) to analyze historical photos that were reflective of the situations of racial segregation in South Africa. Through analyzing pictures and drawing conclusions about trends, we can gain more insights using quantitative methodologies. This sheds light on the past, which paves the way for truth and reconciliation in the present.
 
