@@ -1,3 +1,4 @@
+# Author: Haolin Guo
 import tensorflow as tf
 
 # Load and preprocess the data
