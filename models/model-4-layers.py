@@ -1,31 +1,20 @@
 import numpy as np
 import tensorflow as tf
 from PIL import Image
-from tensorflow.keras.datasets import cifar10
 from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
-
-# Load and preprocess the data
-def load_data():
-    (x_train, y_train), (x_test, y_test) = cifar10.load_data()
-    return (x_train, y_train), (x_test, y_test)
-
-def preprocess_data(x_train, x_test):
-    x_train = x_train.astype('float32') / 255.0
-    x_test = x_test.astype('float32') / 255.0
-
-    y_train = to_categorical(y_train)
-    y_test = to_categorical(y_test)
-
-    return x_train, x_test
-
-(x_train, y_train), (x_test, y_test) = load_data()
-x_train, x_test = preprocess_data(x_train, x_test)
+from preprocess_data import preprocess_data
 
 BATCH_SIZE = 64
 EPOCHS = 50
-IMG_HEIGHT, IMG_WIDTH = 32, 32
+IMG_HEIGHT, IMG_WIDTH = 224, 224
+NUM_CLASSES = 2
+
+(x_train, y_train), (x_test, y_test) = preprocess_data()
+
+y_train = to_categorical(y_train)
+y_test = to_categorical(y_test)
 
 # Data augmentation
 datagen = ImageDataGenerator(
@@ -45,17 +34,17 @@ model = tf.keras.Sequential([
     tf.keras.layers.BatchNormalization(),
     tf.keras.layers.MaxPooling2D(pool_size=(2, 2)),
     tf.keras.layers.Dropout(0.25),
-    
+
     tf.keras.layers.Conv2D(64, kernel_size=(3, 3), activation='relu'),
     tf.keras.layers.BatchNormalization(),
     tf.keras.layers.MaxPooling2D(pool_size=(2, 2)),
     tf.keras.layers.Dropout(0.25),
-    
+
     tf.keras.layers.Flatten(),
     tf.keras.layers.Dense(128, activation='relu'),
     tf.keras.layers.BatchNormalization(),
     tf.keras.layers.Dropout(0.5),
-    tf.keras.layers.Dense(10, activation='softmax')
+    tf.keras.layers.Dense(NUM_CLASSES, activation='softmax')
 ])
 
 # Compile the model
@@ -63,7 +52,7 @@ model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accur
 
 # Early stopping and model checkpoint callbacks
 early_stopping = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
-model_checkpoint = ModelCheckpoint('best_model.h5', monitor='val_loss', save_best_only=True)
+model_checkpoint = ModelCheckpoint('south_africa_segregation_best_model.h5', monitor='val_loss', save_best_only=True)
 
 callbacks = [early_stopping, model_checkpoint]
 
@@ -80,29 +69,4 @@ _, accuracy = model.evaluate(x_test, y_test)
 print('Accuracy:', accuracy)
 
 # Save the best model
-model.save('cifar10_best_model.h5')
-
-# Functions for loading, processing, and predicting an image
-def load_image(image_path, target_size):
-    image = Image.open(image_path)
-    image = image.resize(target_size, Image.ANTIALIAS)
-    return image
-
-def process_image(image):
-    image_array = np.array(image) / 255.0
-    image_array = np.expand_dims(image_array, axis=0)
-    return image_array
-
-def predict_image(model, image_path, target_size=(IMG_HEIGHT, IMG_WIDTH)):
-    image = load_image(image_path, target_size)
-    image_array = process_image(image)
-    prediction = model.predict(image_array)
-    return prediction
-
-# Load a JPEG image, preprocess it, and make a prediction using the trained model
-image_path = "path/to/your/image.jpg"
-prediction = predict_image(model, image_path)
-predicted_class = np.argmax(prediction)
-
-print("Prediction:", prediction)
-print("Predicted class:", predicted_class)
+model.save('south_africa_segregation_best_model.h5')
