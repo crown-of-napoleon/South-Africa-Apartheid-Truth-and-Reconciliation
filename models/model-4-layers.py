@@ -89,8 +89,6 @@ def load_image(image_path, target_size):
     return image
 
 def process_image(image):
-    image_array = np
-def process_image(image):
     image_array = np.array(image) / 255.0
     image_array = np.expand_dims(image_array, axis=0)
     return image_array
