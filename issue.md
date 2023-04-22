@@ -2,6 +2,8 @@
 
 waiting for further updates...
 
+# MODEL UPDATED
+
 ## Gather training data
 
 Required
