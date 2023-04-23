@@ -2,9 +2,23 @@
 
 Apartheid was a system of institutionalized racial segregation and discrimination that was enforced in South Africa from 1948 until the early 1990s. It was a political and social policy that was designed to maintain white supremacy and keep the black majority population in a state of subjugation. Under apartheid, the rights and freedoms of black South Africans were severely curtailed, and they were forcibly separated from white South Africans in many areas of life, including where they could live, go to school, and even use public facilities. The system of apartheid was enforced through legislation, and it was upheld by the government, the police, and the military. The regime of apartheid was eventually dismantled in the 1990s, following a long and often violent struggle by black South Africans for their rights and freedoms.
 
+The history of racial segregation in South Africa dates back to colonial times when the Dutch established a settlement in the Cape of Good Hope in 1652. The Dutch East India Company, which controlled the colony, imported slaves from Asia and Africa to work on farms and mines. Over time, the population grew, and tensions arose between the white settlers and the black African population.
+
+In 1910, the Union of South Africa was established, bringing together four British colonies and two former Dutch colonies. The country's new government introduced segregationist policies, such as the Land Act of 1913, which restricted black people's ownership of land, and the Native Urban Areas Act of 1923, which enforced residential segregation in urban areas.
+
+The National Party came to power in 1948 and implemented the apartheid system, a comprehensive system of racial segregation that was institutionalized in law. The apartheid system enforced separate living areas, schools, hospitals, and public facilities for different races, with black people subjected to inferior facilities and opportunities. The political stance of the National Party shifted to more radical, extreme right since the 1960s, with stricter segregation policies being enforced over time. 
+
+The apartheid system was met with widespread opposition, both within South Africa and internationally. The African National Congress (ANC), a political organization formed in 1912, led the struggle against apartheid and was instrumental in securing its eventual downfall. International pressure, including economic sanctions and boycotts, also contributed to the end of apartheid.
+
+In 1994, South Africa held its first multiracial democratic elections, and Nelson Mandela became the country's first black president, marking the end of apartheid. However, the legacy of apartheid persists, and the country still struggles with issues of inequality, poverty, and social unrest. The study of racial segregation policies in South Africa is important to understand the country's history and its ongoing struggles with social and economic inequality.
+
 # Introduction
 
-This project serves to use Machine Learning technologies (Convulutional Neural Networks, etc) to analyze historical photos that were reflective of the situations of racial segregation in South Africa. Through analyzing pictures and drawing conclusions about trends, we can gain more insights using quantitative methodologies. This sheds light on the past, which paves the way for truth and reconciliation in the present.
+The purpose of this project is to study the evolution of racial segregation policies in South Africa under the control of the Nationalist Party. Racial segregation has been a long-standing issue in South Africa, with the apartheid system implemented in 1948. This system aimed to enforce racial segregation and political and economic control of the white minority over the black majority, leading to decades of discrimination, inequality, and social unrest.
+
+In this project, we aim to leverage Machine Learning technologies to analyze historical photos of South Africa and generate insights on the evolvement of the apartheid system. By using image classification algorithms to classify historical photos depicting apartheid policies, we aim to reveal the historical truth behind the struggle against apartheid, its impact on society, and the evolution of policies over time.
+
+Through this project, we hope to shed light on the historical truth of South Africa's apartheid system and contribute to promoting truth and reconciliation among the country's diverse communities. By providing insights into the evolution of apartheid policies, we aim to help heal the wounds caused by decades of discrimination and segregation and contribute to a more just and equitable society.
 
 # Technologies Used
 
@@ -157,3 +171,7 @@ the community.
 # Contributions
 
 All contributions, bug reports, bug fixes, documentation improvements, enhancements, and ideas are welcome.
+
+# Contact
+
+In case of questions, comments, concerns, etc, please contact Gary (garyguo123456789@gmail.com).
