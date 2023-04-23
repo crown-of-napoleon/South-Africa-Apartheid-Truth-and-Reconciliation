@@ -12,6 +12,8 @@ The apartheid system was met with widespread opposition, both within South Afric
 
 In 1994, South Africa held its first multiracial democratic elections, and Nelson Mandela became the country's first black president, marking the end of apartheid. However, the legacy of apartheid persists, and the country still struggles with issues of inequality, poverty, and social unrest. The study of racial segregation policies in South Africa is important to understand the country's history and its ongoing struggles with social and economic inequality.
 
+![ezgif-4-8e8e9a4c36](https://user-images.githubusercontent.com/112432640/233857455-2333d0c0-ea34-4945-93d3-5889df6dd5bf.jpg)
+
 # Introduction
 
 The purpose of this project is to study the evolution of racial segregation policies in South Africa under the control of the Nationalist Party. Racial segregation has been a long-standing issue in South Africa, with the apartheid system implemented in 1948. This system aimed to enforce racial segregation and political and economic control of the white minority over the black majority, leading to decades of discrimination, inequality, and social unrest.
