@@ -176,4 +176,4 @@ All contributions, bug reports, bug fixes, documentation improvements, enhanceme
 
 # Contact
 
-In case of questions, comments, concerns, etc, please contact Gary (garyguo123456789@gmail.com).
+In case of questions, comments, concerns, etc, please contact Gary (g.haolin@columbia.edu).
