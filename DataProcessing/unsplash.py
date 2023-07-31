@@ -14,6 +14,9 @@ SAVE_DIR = "south_africa_segregation_images"
 Path(SAVE_DIR).mkdir(parents=True, exist_ok=True)
 
 def fetch_images(query, per_page=10, page=1):
+    '''
+    Fetch images from Unsplash.
+    '''
     headers = {
         "Accept-Version": "v1",
         "Authorization": f"Client-ID {ACCESS_KEY}"
