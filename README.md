@@ -220,4 +220,4 @@ Thank you for your interest in contributing!
 
 # Contact
 
-In case of questions, comments, concerns, etc, please contact Gary (g.haolin@columbia.edu).
+In case of questions, comments, concerns, etc, please contact Haolin Guo (g.haolin@columbia.edu).
