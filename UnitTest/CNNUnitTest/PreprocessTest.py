@@ -3,6 +3,9 @@ import numpy as np
 
 class TestDataPreprocessing(unittest.TestCase):
     def test_preprocess_data(self):
+        '''
+        Test the preprocess_data() function.
+        '''
         from preprocess_data import preprocess_data
         (x_train, y_train), _ = preprocess_data()
         expected_train_size = 1374

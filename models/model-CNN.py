@@ -6,6 +6,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 from preprocess_data import preprocess_data
 
+# Constants
 BATCH_SIZE = 64
 EPOCHS = 50
 IMG_HEIGHT, IMG_WIDTH = 224, 224

@@ -30,6 +30,7 @@ def fetch_images(query, per_page=10, page=1):
 
     response = requests.get(SEARCH_ENDPOINT, headers=headers, params=params)
 
+    # Check the status code of the response
     if response.status_code == 200:
         data = json.loads(response.text)
         return data['results']
@@ -38,6 +39,9 @@ def fetch_images(query, per_page=10, page=1):
         return None
 
 def download_image(image_url, save_path):
+    '''
+    Download an image from a URL and save it to a file.
+    '''
     response = requests.get(image_url)
     if response.status_code == 200:
         with open(save_path, "wb") as file:
@@ -49,6 +53,7 @@ def download_image(image_url, save_path):
 search_query = "south africa segregation"
 images = fetch_images(search_query)
 
+# Download the images
 if images:
     for image in images:
         image_url = image['urls']['regular']

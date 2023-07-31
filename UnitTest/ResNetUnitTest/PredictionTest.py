@@ -1,5 +1,8 @@
 class TestPrediction(unittest.TestCase):
     def test_prediction_output(self):
+        '''
+        Test the prediction output.
+        '''
         from preprocess_data import load_data, preprocess_data
         test_data, _ = load_data('test_data_path')
         test_data = preprocess_data(test_data)

@@ -3,6 +3,9 @@ import tensorflow as tf
 
 class TestModelStructure(unittest.TestCase):
     def setUp(self):
+        '''
+        Define the model architecture.
+        '''
         self.model = tf.keras.Sequential([
             tf.keras.layers.Conv2D(32, kernel_size=(3, 3), activation='relu', input_shape=(224, 224, 3)),
             tf.keras.layers.BatchNormalization(),
