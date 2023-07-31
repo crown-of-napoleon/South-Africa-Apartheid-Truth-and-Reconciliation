@@ -7,18 +7,28 @@ TARGET_SIZE = (224, 224)  # Adjust this based on your model's input size
 DATA_DIR = 'data'
 
 def resize_image(image, target_size):
+    '''
+    Resize an image to the target size.
+    '''
     return image.resize(target_size, Image.ANTIALIAS)
 
 def load_and_preprocess_image(image_path, target_size):
+    '''
+    Load an image from a file and resize it.
+    '''
     image = Image.open(image_path)
     image = resize_image(image, target_size)
     image_array = np.array(image) / 255.0
     return image_array
 
 def load_and_preprocess_dataset(data_dir, target_size):
+    '''
+    Load and preprocess a dataset.
+    '''
     image_paths = []
     labels = []
 
+    # Iterate through all the files in the data directory
     for label in os.listdir(data_dir):
         label_dir = os.path.join(data_dir, label)
         for image_name in os.listdir(label_dir):
@@ -32,12 +42,17 @@ def load_and_preprocess_dataset(data_dir, target_size):
     return images, np.array(labels)
 
 def preprocess_data():
+    '''
+    Preprocess the data and split it into training and testing datasets.
+    '''
     images, labels = load_and_preprocess_dataset(DATA_DIR, TARGET_SIZE)
 
-    x_train, x_test, y_train, y_test = train_test_split(images, labels, test_size=0.2, stratify=labels, random_state=42)
+    x_train, x_test, y_train, y_test = train_test_split(images, 
+    labels, test_size=0.2, stratify=labels, random_state=42)
 
     return (x_train, y_train), (x_test, y_test)
 
+# Test the preprocess_data() function
 if __name__ == '__main__':
     (x_train, y_train), (x_test, y_test) = preprocess_data()
     print('Training data:', x_train.shape, y_train.shape)
