@@ -52,6 +52,29 @@ The code also includes an Authorization header with an API key, which is require
 
 If the request is successful (i.e., if the HTTP status code is 200), the code processes the response data by iterating through the list of images and downloading each image using an HTTP GET request to the image URL. The image is then saved to a file on the local filesystem.
 
+# Setup
+
+## Prerequisites
+
+1. Python 3.x
+2. R
+
+## Clone the repository
+
+First, you need to clone the repository to your local machine. You can do this by running the following command in your terminal:
+
+```
+git clone https://github.com/crown-of-napoleon/South-Africa-Apartheid-Truth-and-Reconciliation.git
+```
+## Install dependencies
+
+The project has a number of Python dependencies which are listed in setup.py. You can install these dependencies using pip. Navigate to the project directory and run the following command:
+
+```
+pip install .
+```
+This command needs to be run in the directory that contains the setup.py file. It will install the project along with its dependencies.
+
 # Disclaimer
 
 The results and opinions generated and concluded by the code are solely for illustrative purposes and do not reflect the opinions and beliefs of the members of the contributors team or their affiliates. The contributors do not endorse any form of racial discrimination, segregation, or speeches that violate principles of equity and human rights. The contributors hold firm belief that it is crucial to build a tolerant, diverse environment for everyone, regardless of race, gender, sexuality, etc. 
