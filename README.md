@@ -197,6 +197,27 @@ the community.
 
 All contributions, bug reports, bug fixes, documentation improvements, enhancements, and ideas are welcome.
 
+## How to Contribute
+
+We welcome contributions from everyone. Here are a few ways you can help:
+
+1. **Fork the repository**: Start by forking the [repository](https://github.com/crown-of-napoleon/South-Africa-Apartheid-Truth-and-Reconciliation).
+
+2. **Create a new branch**: Create a new branch in your forked repository. The branch name should be descriptive of the changes you are going to make.
+
+3. **Make your changes**: Make the changes you want to contribute. These could be adding new files, modifying existing ones, fixing bugs, etc.
+
+4. **Commit your changes**: Commit your changes to your branch. Make sure to write a clear and detailed commit message explaining what you've done.
+
+5. **Push your changes**: Push your changes to your forked repository on GitHub.
+
+6. **Create a Pull Request**: Go to the original [repository](https://github.com/crown-of-napoleon/South-Africa-Apartheid-Truth-and-Reconciliation) on GitHub, and click on the "New Pull Request" button. Select your fork and the branch you've worked on. Submit your Pull Request with a comprehensive description of the changes you've made.
+
+Before you submit your Pull Request, please ensure to follow our code of conduct and contribution guidelines.
+
+Thank you for your interest in contributing!
+
+
 # Contact
 
 In case of questions, comments, concerns, etc, please contact Gary (g.haolin@columbia.edu).
